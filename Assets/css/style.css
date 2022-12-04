@@ -136,15 +136,9 @@ nav:hover .menu {
 .work{
     border:5px solid var(--dark_blue);
     margin: 1%;
+    display:flex;
 }
 
-.work a{
-    background-image: url("../images/coming_soon.jpg");
-    display: block;
-    height: 300px;
-    width: 500px;
-    position: relative;
-}
 
 #first_work a{
     background-image: url("../images/work1.PNG") ;
@@ -163,6 +157,14 @@ nav:hover .menu {
     position: relative;
 }
 
+.work a{
+    background-image: url("../images/coming_soon.jpg");
+    display: block;
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
 #span_banner{
     border: 6px solid var(--light_blue);
     border-radius: 15px;
@@ -172,6 +174,7 @@ nav:hover .menu {
     0 0 6px 3px var(--light_blue),  /* inner light blue */
     0 0 10px 6px rgb(179, 255, 251), /* middle lighter blue */
     0 0 14px 10px rgb(255, 254, 194); /* outer light yellow */
+    /*For light effect: https://codersblock.com/blog/creating-glow-effects-with-css/*/
 }
 
 #span_banner::before, #span_banner::after {
@@ -199,7 +202,6 @@ nav:hover .menu {
     0 0 6px 3px var(--light_blue),  /* inner light blue */
     0 0 10px 6px rgb(179, 255, 251), /* middle lighter blue */
     0 0 14px 10px rgb(255, 254, 194); /* outer light yellow */
-    /*For light effect: https://codersblock.com/blog/creating-glow-effects-with-css/*/
 }
 
 .work:hover span {
@@ -243,6 +245,10 @@ footer{
       flex-direction: column;
     }
 
+    h2 {
+        font-size: 140%;
+    }
+
     h3 {
         position: relative;
         text-align: center;
@@ -257,6 +263,11 @@ footer{
     h3::after {
         content: "⭐";
     }
+
+    .work{
+        min-width: 0;
+    }
+
   }
 
 @media screen and (max-width: 980px) {
