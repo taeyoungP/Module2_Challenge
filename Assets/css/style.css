@@ -94,6 +94,7 @@ p {
     display: none;
 }
 
+/*Hovering the menu list*/
 nav:hover .menu_list {
     display: block;
 }
@@ -139,7 +140,7 @@ nav:hover .menu {
     display:flex;
 }
 
-
+/*Image for 1st Work fo the page*/
 #first_work a{
     background-image: url("../images/work1.PNG") ;
     display: block;
@@ -149,6 +150,7 @@ nav:hover .menu {
     background-position: top;
 }
 
+/*Image for 2nd work*/
 #work2 a{
     background-image: url("../images/work2.PNG");
     display: block;
@@ -157,6 +159,7 @@ nav:hover .menu {
     position: relative;
 }
 
+/*Rest of incomplete(coming soon) works*/
 .work a{
     background-image: url("../images/coming_soon.jpg");
     display: block;
@@ -165,6 +168,7 @@ nav:hover .menu {
     position: relative;
 }
 
+/*Decoration for the message on banner ("Welcome to my Portfolio)*/
 #span_banner{
     border: 6px solid var(--light_blue);
     border-radius: 15px;
@@ -181,6 +185,8 @@ nav:hover .menu {
     content: "✨";
 }
 
+
+/*Work tag for the image links (work1, work2, work...)*/
 /*For putting header text inside of a href image:
  https://stackoverflow.com/questions/21671292/aligning-text-to-bottom-left-corner-inside-a-styled-element*/
 
@@ -196,6 +202,7 @@ nav:hover .menu {
     background-color: var(--dark_blue);
 }
 
+/*When hover over image work links, its border color will change with shadow effect. The color of work tags also changes*/
 .work:hover{
     border-color: var(--light_blue);
     box-shadow:
@@ -209,14 +216,16 @@ nav:hover .menu {
     background-color: var(--light_blue);
 }
 
-footer{
-    margin-bottom: 3%;
-}
-
+/*Each of sections(About Me, Work, Contact Me) is displayed flex, direciton in row and spaced evenly*/
 .wrap ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+/*Styling for footer section (Contact Me)*/
+footer{
+    margin-bottom: 3%;
 }
 
 .wrap ul li{
@@ -234,12 +243,13 @@ footer{
     border-radius: 10px;
 }
 
+/*When contacts are hovered, it will change the color and underlined, which makes easier for user to know which one they are clicking*/
 .wrap ul a:hover{
     color: var(--dark_blue);
     text-decoration: underline;
 }
 
-
+/*When screen width reaches 768px, page will rearrange direction and styling of the page so the user can read the content easier on smaller screen*/
 @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
@@ -270,6 +280,7 @@ footer{
 
   }
 
+  /*When screen width reaches 980px, contact me list and profile will listed in vertical(column) direction*/
 @media screen and (max-width: 980px) {
     .wrap ul, #wrap_profile{
         flex-direction: column;
