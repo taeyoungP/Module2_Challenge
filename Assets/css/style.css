@@ -167,6 +167,14 @@ nav:hover .menu {
     position: relative;
 }
 
+#work4 a{
+    background-image: url("../images/work4.PNG");
+    display: block;
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
 /*Rest of incomplete(coming soon) works*/
 .work a{
     background-image: url("../images/coming_soon.jpg");
